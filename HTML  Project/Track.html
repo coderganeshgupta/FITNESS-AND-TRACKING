@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="Darebee1.webp">
+  <style>
+body {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  padding-bottom: 10px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+main {
+  padding: 20px 0;
+}
+
+.hero {
+  background-image: url('https://via.placeholder.com/1500x600');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero h2 {
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #ff6347;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #e74c3c;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 220px;
+  background-attachment: fixed;
+  background-position: bottom;
+}
+
+form {
+  text-align: center;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="number"],
+form button {
+  padding: 8px;
+  margin-bottom: 10px;
+  width: 200px;
+}
+
+form button {
+  background-color: #ff6347;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #e74c3c;
+}
+span{
+  font-size: 50px;
+  display: inline;
+  margin-top: 23px;
+}
+.logo{
+  background-color: #e74c3c;
+}
+img{
+  border-radius:50%;
+}
+header .container{
+  display: flex;
+}
+.align{
+  margin-top: 67px;
+}
+p::after{
+  font-size: 50px;
+}
+.foot{
+  margin-bottom:-145px;
+  font-size: 15px;
+  margin-left: 100px;
+  margin-top: 80px;
+  width: 90%;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <img src="Darebee5.jpg" alt="logo" height="100px" width="120px">&nbsp;&nbsp;
+      <span><span class="logo">DAREBEE</span> FitnessHub</span>
+    </div>
+  </header>
+
+  <main>
+
+
+    <section id="track">
+      <div class="container">
+        <h2 align="center">Track Your Exercise</h2>
+        <form>
+          <label for="exercise">Exercise:</label>
+          <input type="text" id="exercise" name="exercise" required>
+          <label for="duration">Duration (mins):</label>
+          <input type="number" id="duration" name="duration" required>
+          <button type="submit" class="btn" onclick="document.getElementById('demo').innerHTML=Date()">Add Exercise</button>
+        </form>
+      </div>
+    </section>
+    <section>
+      <p align='center' id="align">Your Exercise Was Added On
+      <div id="demo" align="center">&nbsp;&nbsp;</div></p>
+    </section>
+    <div class="foot"> &diams; This Fitness trackers allow users to collect, manage, track, and monitor fitness-related activities, such as distance walked, calorie intake, sleep quality, and heart rate. Fitness trackers have become increasingly popular in the past decade. One in five Americans use a device or an app to track their fitness-related activities.People use fitness trackers for various reasons, but ultimately, the main reason is to get fit or maintain health. The device/app helps users stay motivated and allows them to track progress and stay informed. In recent years, many people have started seeking a healthier lifestyle and adopted technologies that motivated them to keep track of their goals. This trend is largely adopted by millennials; some even called the millennials “the wellness generation”. 
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; Darebee FitnessHub</p>
+  </footer>
+</body>
+</html>

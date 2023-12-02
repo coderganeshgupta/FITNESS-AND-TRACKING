@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fitness Tracker</title>
+  <link rel="icon" href="Darebee1.webp"> 
+   <style>
+    body {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      background-image: url('GYM9.webp');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      margin: 0;
+      padding: 0;
+      color: white;
+    }
+    .container {
+      width: 60%;
+      margin: 20px auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 25px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      background-color:rgba(192,192,192,0.4);
+    }
+    h1 {
+      text-align: center;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    label {
+      margin:10px 20px 5px 20px;
+    }
+    input[type="text"],
+    input[type="number"],
+    select {
+      padding: 8px;
+      margin-bottom: 10px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    input[type="submit"] {
+      padding: 10px;
+      background-color: #4caf50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 20px;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+    fieldset{
+        border: 5px solid black;
+        margin-left: 75px;
+        margin-right: 20px;
+        margin-bottom: 10px;
+        background-color: rgba(48,25,52,0.6);
+        width: 80%;
+        border-radius: 25px;
+    }
+    input,.input,select,textarea{
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom:  20px;
+        margin-top: 0;
+    }
+    textarea{
+        border-radius: 5px;
+        margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h1 style="font-size:40px;color: #42213d">Workout Planner</h1>
+  <fieldset>
+    <legend style="font-size: 25px;">Personal Details...</legend>
+  <form method="post" action="End.html">
+    <label for="name">Enter Your Name:</label>
+    <input type="text" name="name" id="name" placeholder="Enter your name" required>
+
+    <label for="num">Enter Your Number:</label>
+    <input type="number" name="num" id="num" placeholder="Enter your number" required>
+
+    <label for="Gender">Select Your Gender:</label>
+    <div class="input"><input type="radio" name="Gender" id="male" value="Male" style="margin-right: 1px;"> Male
+    <input type="radio" name="Gender" id="female" value="Female" style="margin-right:1px;"> Female
+    <input type="radio" name="Gender" id="others" value="Others" style="margin-right:1px;"> Others</div>
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" name="dob" id="dob" required>
+
+    <label for="age">Age:</label>
+    <input type="number" name="age" id="age" placeholder="Age" required>
+
+    <label for="height">Height:</label>
+    <input type="number" name="height" id="height" placeholder="Enter your height in feet" required>
+
+    <label for="weight">Weight:</label>
+    <input type="number" name="weight" id="weight" placeholder="Enter your weight in kgs" required>
+
+    <label for="categeory">Select Your Categeory for Workouts:</label>
+    <select name="categeory" id="categeory">
+        <option value="select" disabled selected>select</option>
+        <option value="beginner">Beginnner</option>
+        <option value="intermediate">Intermediate</option>
+        <option value="experienced">Experienced</option>
+    </select>
+
+    <label for="exercise">Type of Exercise:</label>
+    <select id="exercise" name="exercise" required >
+      <option value="select" disabled selected>Select</option>
+      <option value="cardio">Cardio</option>
+      <option value="strength">Strength Training</option>
+      <option value="flexibility">Flexibility</option>
+      <option value="other">Other</option>
+    </select>
+
+    <label for="duration">Duration (minutes):</label>
+    <input type="number" id="duration" name="duration" min="1" required>
+
+    <label for="calories">Calories Do You Want To Burn:</label>
+    <input type="number" id="calories" name="calories" min="1" required placeholder="calories">
+
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="date" required>
+
+    <label for="comments">Add any Information:</label>
+    <textarea maxlength="30" rows="5" cols="30" placeholder="Enter your message here..."></textarea>
+    <input type="submit" value="Submit">
+  </form>
+</fieldset>
+</div>
+
+</body>
+</html>
